@@ -112,7 +112,7 @@ body {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.24);
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(10px);
     left: 0;
     top: 0;
     display: none;
@@ -168,7 +168,7 @@ body {
   }
   .menu {
     position: absolute;
-    top: 100%;
+    top: 99%;
     left: 0;
     background: #fff;
     width: 100%;
@@ -190,7 +190,7 @@ body {
     from {
       top: 50%;
     } to {
-      top: 100%;
+      top: 99%;
     }
   }
 }
