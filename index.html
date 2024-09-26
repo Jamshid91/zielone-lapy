@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="assets/css/plugin/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <header class="header header-home">
+        <div class="header-box d-flex align-items-center justify-content-between">
+            <a href="./index.html" class="logo">
+                <img src="assets/img/svg/logo.svg" alt="" class="logo-img d-none d-md-block">
+                <img src="assets/img/svg/logo-mini.svg" alt="" class="logo-img d-md-none">
+            </a>
+            <ul class="header-nav d-none d-md-flex">
+                <li><a href="#">o nas</a></li>
+                <li><a href="#">produkty</a></li>
+                <li><a href="#">faq</a></li>
+                <li><a href="#">kontakt</a></li>
+            </ul>
+            <div class="d-none d-md-flex align-items-center">
+                <a href="#" class="header-link">
+                    <svg width="34" height="31" viewBox="0 0 34 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 11.9142H33M1 11.9142L4.55556 30.0392H29.4444L33 11.9142M1 11.9142L11.6667 1.03922M33 11.9142L22.3333 1.03922" stroke="black" stroke-width="1.34641" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <a href="#" class="header-link">
+                    <svg width="25" height="33" viewBox="0 0 25 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.5 0.850006C11.0364 0.850006 9.60566 1.28401 8.38874 2.09713C7.17181 2.91025 6.22334 4.06597 5.66325 5.41815C5.10316 6.77032 4.95662 8.25821 5.24215 9.69367C5.52768 11.1291 6.23246 12.4477 7.26737 13.4826C8.30228 14.5175 9.62083 15.2223 11.0563 15.5078C12.4917 15.7933 13.9796 15.6468 15.3318 15.0867C16.684 14.5266 17.8397 13.5781 18.6528 12.3612C19.466 11.1443 19.9 9.71359 19.9 8.25001C19.8979 6.28803 19.1176 4.407 17.7303 3.01967C16.343 1.63234 14.4619 0.852047 12.5 0.850006ZM12.5 14.1083C11.3413 14.1083 10.2086 13.7648 9.24524 13.121C8.28185 12.4773 7.53097 11.5624 7.08756 10.4919C6.64416 9.42142 6.52815 8.24351 6.75419 7.1071C6.98024 5.9707 7.53819 4.92684 8.35749 4.10754C9.17679 3.28824 10.2206 2.73028 11.3571 2.50424C12.4935 2.27819 13.6714 2.39421 14.7418 2.83761C15.8123 3.28102 16.7273 4.03189 17.371 4.99529C18.0147 5.95869 18.3583 7.09134 18.3583 8.25001C18.3567 9.80323 17.7389 11.2924 16.6406 12.3907C15.5423 13.489 14.0532 14.1067 12.5 14.1083ZM24.8333 32.9167H0.166626V25.9792C0.169074 23.7311 1.0632 21.5758 2.65282 19.9862C4.24244 18.3966 6.39773 17.5025 8.64579 17.5H16.3541C18.6022 17.5025 20.7575 18.3966 22.3471 19.9862C23.9367 21.5758 24.8308 23.7311 24.8333 25.9792V32.9167ZM1.70829 31.375H23.2916V25.9792C23.2896 24.1399 22.558 22.3765 21.2574 21.0759C19.9568 19.7753 18.1934 19.0437 16.3541 19.0417H8.64579C6.80648 19.0437 5.04308 19.7753 3.74249 21.0759C2.4419 22.3765 1.71033 24.1399 1.70829 25.9792V31.375Z" fill="black"/>
+                    </svg>
+                </a>
+            </div>
+            <button class="menu-btn d-md-none">
+                <img src="assets/img/svg/burger.svg" alt="">
+            </button>
+            <div class="menu justify-content-end text-end">
+                <ul class="menu-nav">
+                    <li><a href="#">
+                        <span>koszyk</span>
+                        <svg width="14" height="16" viewBox="0 0 34 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 11.9142H33M1 11.9142L4.55556 30.0392H29.4444L33 11.9142M1 11.9142L11.6667 1.03922M33 11.9142L22.3333 1.03922" stroke="#2C9A33" stroke-width="1.34641" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a></li>
+                    <li><a href="#">
+                        <span>konto</span>
+                        <svg width="13" height="16" viewBox="0 0 25 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.5 0.850006C11.0364 0.850006 9.60566 1.28401 8.38874 2.09713C7.17181 2.91025 6.22334 4.06597 5.66325 5.41815C5.10316 6.77032 4.95662 8.25821 5.24215 9.69367C5.52768 11.1291 6.23246 12.4477 7.26737 13.4826C8.30228 14.5175 9.62083 15.2223 11.0563 15.5078C12.4917 15.7933 13.9796 15.6468 15.3318 15.0867C16.684 14.5266 17.8397 13.5781 18.6528 12.3612C19.466 11.1443 19.9 9.71359 19.9 8.25001C19.8979 6.28803 19.1176 4.407 17.7303 3.01967C16.343 1.63234 14.4619 0.852047 12.5 0.850006ZM12.5 14.1083C11.3413 14.1083 10.2086 13.7648 9.24524 13.121C8.28185 12.4773 7.53097 11.5624 7.08756 10.4919C6.64416 9.42142 6.52815 8.24351 6.75419 7.1071C6.98024 5.9707 7.53819 4.92684 8.35749 4.10754C9.17679 3.28824 10.2206 2.73028 11.3571 2.50424C12.4935 2.27819 13.6714 2.39421 14.7418 2.83761C15.8123 3.28102 16.7273 4.03189 17.371 4.99529C18.0147 5.95869 18.3583 7.09134 18.3583 8.25001C18.3567 9.80323 17.7389 11.2924 16.6406 12.3907C15.5423 13.489 14.0532 14.1067 12.5 14.1083ZM24.8333 32.9167H0.166626V25.9792C0.169074 23.7311 1.0632 21.5758 2.65282 19.9862C4.24244 18.3966 6.39773 17.5025 8.64579 17.5H16.3541C18.6022 17.5025 20.7575 18.3966 22.3471 19.9862C23.9367 21.5758 24.8308 23.7311 24.8333 25.9792V32.9167ZM1.70829 31.375H23.2916V25.9792C23.2896 24.1399 22.558 22.3765 21.2574 21.0759C19.9568 19.7753 18.1934 19.0437 16.3541 19.0417H8.64579C6.80648 19.0437 5.04308 19.7753 3.74249 21.0759C2.4419 22.3765 1.71033 24.1399 1.70829 25.9792V31.375Z" fill="#2C9A33"/>
+                        </svg>
+                    </a></li>
+                    <li><a href="#">produkty</a></li>
+                    <li><a href="#">kontakt</a></li>
+                    <li><a href="#">o nas</a></li>
+                    <li><a href="#">faq</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+  <main class="main">
+    <div class="block1 d-flex align-items-end align-items-sm-center text-sm-start text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="block1-title">Kuweta dla <br> piesków</h1>
+                    <p class="block1-subtitle">Żywa trawa dla szczęśliwych łap</p>
+                    <button class="buyNow-btn">Kup teraz</button>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="block2">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex align-items-center justify-content-between flex-wrap">
+                    <img src="assets/img/png/landshaft.png" alt="" class="block2-img">
+                    <div class="block2-info">
+                        <h2 class="title-text">Kuweta dla psa jest prosta</h2>
+                        <p class="info-text">Naturalna polska trawa</p>
+                        <p class="info-text">Kuweta do nauki korzystania z toalety dla szczeniąt, łatwa w użyciu i łatwa do czyszczenia</p>
+                        <button class="buyNow-btn">Kup teraz</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="block3">
+        <h2 class="title-text"><span>Jak używać</span></h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="block3-box">
+                        <div class="block3-card position-relative text-center">
+                            <a href="#" class="position-absolute top-0 start-0 w-100 h-100 z-1"></a>
+                            <img src="assets/img/png/dog1.png" alt="" class="card-img">
+                            <p class="card-text">Otwórz i włóż pokrywę pod pudełko</p>
+                        </div>
+                        <div class="block3-card position-relative text-center">
+                            <a href="#" class="position-absolute top-0 start-0 w-100 h-100 z-1"></a>
+                            <img src="assets/img/png/dog2.png" alt="" class="card-img">
+                            <p class="card-text">Umieść pudełko w wygodnym miejscu dla zwierzaka</p>
+                        </div>
+                        <div class="block3-card position-relative text-center">
+                            <a href="#" class="position-absolute top-0 start-0 w-100 h-100 z-1"></a>
+                            <img src="assets/img/png/dog3.png" alt="" class="card-img">
+                            <p class="card-text">Otwórz i włóż pokrywę pod pudełko</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="block4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex align-items-center justify-content-between flex-wrap">
+                    <div class="block4-info">
+                        <h2 class="title-text">Dlaczego żywa trawa?</h2>
+                        <p class="info-text">Żywa trawa naturalnie wchłania płyny i eliminuje nieprzyjemne zapachy, czyniąc naukę szczeniaka korzystania z toalety łatwym i bezproblemowym procesem. Nie wymaga czyszczenia. Po prostu wymień pudełko na nowe.</p>
+                        <button class="buyNow-btn">Kup teraz</button>
+                    </div>
+                    <img src="assets/img/png/block3.png" alt="" class="block4-img">
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="block5">
+        <h2 class="title-text"><span>Często zadawane pytania</span></h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="block5-item">
+                        <div class="item-head d-flex align-items-start justify-content-between">
+                            <h3 class="item-title">Dlaczego warto spróbować Zielone Łapy?</h3>
+                            <button class="show-btn">
+                                <svg width="19" height="10" viewBox="0 0 19 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18 9L9.5 1L1 9" stroke="#717171"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <ul class="item-info">
+                            <li>Mieszkasz w mieszkaniu lub apartamencie bez podwórka</li>
+                            <li>Pracujesz długo lub masz nieregularne godziny pracy</li>
+                            <li>Chcesz uniknąć błędów na dywanie, podłodze i meblach</li>
+                            <li>Masz ograniczoną mobilność</li>
+                            <li>Trenujesz czczeniaka</li>
+                            <li>Masz starszego psa</li>
+                            <li>Chcesz uniknąć wychodzenia z psem późno w nocy, w deszczu lub na śniegu</li>
+                        </ul>
+                    </div>
+                    <div class="block5-item">
+                        <div class="item-head d-flex align-items-start justify-content-between">
+                            <h3 class="item-title">Jak często powinienem wymieniać?</h3>
+                            <button class="show-btn">
+                                <svg width="19" height="10" viewBox="0 0 19 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18 9L9.5 1L1 9" stroke="#717171"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <ul class="item-info">
+                            <li>Zalecamy wymianę Zielone Lapy co 1-4 tygodnie, w zależności od wielkości twojego zwierzaka i częstotliwości użytkowania produktu</li>
+                        </ul>
+                    </div>
+                    <div class="block5-item">
+                        <div class="item-head d-flex align-items-start justify-content-between">
+                            <h3 class="item-title">Jak często powinienem wymieniać?</h3>
+                            <button class="show-btn">
+                                <svg width="19" height="10" viewBox="0 0 19 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18 9L9.5 1L1 9" stroke="#717171"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <ul class="item-info">
+                            <li>Gdzie najlepiej umieścić kuwetę?</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex align-items-center justify-content-between flex-wrap">
+                    <h3 class="footer-title">Masz pytania? Napisz do nas!</h3>
+                    <form class="footer-form d-flex">
+                        <input type="text" class="form__inp" placeholder="Wpisz pytanie" required>
+                        <button class="form__btn">napisz</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-box">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex align-items-center justify-content-between">
+                    <a href="./index.html" class="logo">
+                        <img src="assets/img/svg/logo2.svg" alt="" class="logo-img">
+                    </a>
+                    <ul class="footer-nav d-none d-md-flex">
+                        <li><a href="#">o nas</a></li>
+                        <li><a href="#">produkty</a></li>
+                        <li><a href="#">faq</a></li>
+                        <li><a href="#">kontakt</a></li>
+                    </ul>
+                    <div class="socials d-flex">
+                        <a href="#" class="social">
+                            <img src="assets/img/svg/fm.svg" alt="">
+                        </a>
+                        <a href="#" class="social">
+                            <img src="assets/img/svg/tiktok.svg" alt="">
+                        </a>
+                        <a href="#" class="social">
+                            <img src="assets/img/svg/instagram.svg" alt="">
+                        </a>
+                        <a href="#" class="social">
+                            <img src="assets/img/svg/facebook.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 d-flex justify-content-between align-items-end">
+                    <div class="footer-info">
+                        <p>Werbeny 43A <br> 05-410 Józefów</p>
+                        <a href="mailto:pl.zielone.lapy@gmail.com">pl.zielone.lapy@gmail.com</a>
+                    </div>
+                    <div class="footer-subnav">
+                        <ul class="d-flex justify-content-between flex-wrap flex-md-nowrap">
+                            <li><a href="#">polityka prywatności</a></li>
+                            <li><a href="#">polityka zwrotów</a></li>
+                            <li><a href="#">polityka wysyłki</a></li>
+                            <li><a href="#">regulamin usługi</a></li>
+                        </ul>
+                        <ul class="d-flex d-md-none justify-content-between">
+                            <li><a href="#">o nas</a></li>
+                            <li><a href="#">produkty</a></li>
+                            <li><a href="#">faq</a></li>
+                            <li><a href="#">kontakt</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/header.js"></script>
+  <script src="assets/js/index.js"></script>
+</body>
+</html>
