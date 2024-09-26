@@ -413,6 +413,9 @@ input, textarea, select, button {
 .footer-box .row:first-child {
   margin-bottom: 28px;
 }
+.footer-box .row:last-child .footer-nav {
+  margin-top: 25px;
+}
 .footer-nav li {
   margin-right: 38px;
 }
@@ -804,8 +807,6 @@ input, textarea, select, button {
   }
   .footer-title {
     width: 100%;
-    font-size: 46px;
-    line-height: 46px;
   }
   .footer .logo-img {
     width: 164px;
@@ -824,6 +825,8 @@ input, textarea, select, button {
 @media (max-width: 767px) {
   .title-text {
     padding: 0 10px;
+    font-size: 36px;
+    line-height: 36px;
   }
   .header-box {
     padding: 20px 30px;
@@ -863,84 +866,63 @@ input, textarea, select, button {
     margin-bottom: 5px;
   }
   .footer-subnav {
-    width: 70%;
+    width: auto;
+    flex-direction: column;
+    align-items: end;
   }
-  .footer-subnav ul:first-child li {
-    width: 50%;
-    white-space: nowrap;
+  .footer-subnav li {
     margin-bottom: 6px;
   }
-  .footer-subnav ul:first-child li:nth-child(2), .footer-subnav ul:first-child li:nth-child(4) {
-    text-align: end;
-  }
-  .footer-subnav ul li {
-    text-align: left;
-  }
-  .footer-subnav ul li:last-child {
-    margin-right: 0;
-  }
-  .footer-subnav ul li:hover {
-    opacity: 0.9;
+  .footer-subnav li:last-child {
+    margin-bottom: 0;
   }
 }
 @media (max-width: 576px) {
+  body {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .header-box {
+    margin-top: 20px;
+  }
   .main .block1 {
     background-image: url(../img/png/block1-mob.png);
     background-position: center;
     height: 522px;
     padding-bottom: 60px;
   }
-}
-@media (max-width: 460px) {
-  .main .block1-title {
-    font-size: 56px;
-    line-height: 56px;
+  .main .block5-item .item-title {
+    font-size: 24px;
+    line-height: 28px;
   }
-  .footer {
-    font-size: 11px;
-    line-height: 14px;
+  .main .block5-item .show-btn {
+    width: 40px;
+  }
+  .footer-top {
+    padding: 50px 0 30px;
+  }
+  .footer .logo {
+    background: #fff;
+    padding: 5px;
   }
   .footer .logo-img {
-    width: 130px;
+    width: 35px;
   }
   .footer-form .form__inp {
     font-size: 18px;
     padding: 0 20px;
   }
   .footer-form .form__btn {
-    min-width: 110px;
+    min-width: 100px;
     font-size: 18px;
   }
-  .footer-info {
-    font-size: 10px;
-    line-height: 12px;
-  }
-  .footer-info p {
-    margin-bottom: 4px;
-  }
   .footer .socials .social {
-    margin-right: 5px;
+    margin-right: 10px;
   }
-  .footer .socials .social img {
-    width: 36px;
-  }
-  .footer-subnav {
-    width: 70%;
-  }
-  .footer-subnav ul:first-child li {
-    width: 50%;
-    margin-bottom: 2px;
-  }
-  .footer-subnav ul:first-child li:nth-child(2), .footer-subnav ul:first-child li:nth-child(4) {
-    text-align: end;
-  }
-  .footer-subnav ul li {
-    text-align: left;
-  }
-  .footer-subnav ul li:last-child {
-    margin-right: 0;
-  }
-  .footer-subnav ul li:hover {
-    opacity: 0.9;
+}
+@media (max-width: 460px) {
+  .main .block1-title {
+    font-size: 56px;
+    line-height: 56px;
   }
 }/*# sourceMappingURL=main.css.map */

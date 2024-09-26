@@ -402,6 +402,9 @@ body {
     .row:first-child {
       margin-bottom: 28px;
     }
+    .row:last-child .footer-nav {
+      margin-top: 25px;
+    }
   }
   &-nav {
     li {

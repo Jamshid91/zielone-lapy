@@ -100,8 +100,6 @@
     line-height: 16px;
     &-title {
       width: 100%;
-      font-size: 46px;
-      line-height: 46px;
     }
     .logo-img {
       width: 164px;
@@ -125,6 +123,8 @@
   
   .title-text {
     padding: 0 10px;
+    font-size: 36px;
+    line-height: 36px;
   }
   .header {
     &-box {
@@ -178,27 +178,13 @@
       }
     }
     &-subnav {
-      width: 70%;
-      ul {
-        &:first-child {
-          li {
-            width: 50%;
-            white-space: nowrap;
-            margin-bottom: 6px;
-            &:nth-child(2),
-            &:nth-child(4) {
-              text-align: end;
-            }
-          }
-        }
-        li {
-          text-align: left;
-          &:last-child {
-            margin-right: 0;
-          }
-          &:hover {
-            opacity: 0.9;
-          }
+      width: auto;
+      flex-direction: column;
+      align-items: end;
+      li {
+        margin-bottom: 6px;
+        &:last-child {
+          margin-bottom: 0;
         }
       }
     }
@@ -206,6 +192,15 @@
 }
 
 @media (max-width: 576px) {
+  body {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .header {
+    &-box {
+      margin-top: 20px;
+    }
+  }
   .main {
     .block1 {
       background-image: url(../img/png/block1-mob.png);
@@ -213,8 +208,46 @@
       height: 522px;
       padding-bottom: 60px;
     }
+    .block5 {
+      &-item {
+        .item-title {
+          font-size: 24px;
+          line-height: 28px;
+        }
+        .show-btn {
+          width: 40px;
+        }
+      }
+    }
   }
 
+  .footer {
+    &-top {
+      padding: 50px 0 30px;
+    }
+    .logo {
+      background: #fff;
+      padding: 5px;
+    }
+    .logo-img {
+      width: 35px;
+    }
+    &-form {
+      .form__inp {
+        font-size: 18px;
+        padding: 0 20px;
+      }
+      .form__btn {
+        min-width: 100px;
+        font-size: 18px;
+      }
+    }
+    .socials {
+      .social {
+        margin-right: 10px;
+      }
+    }
+  }
 }
 
   @media (max-width: 460px) {
@@ -223,62 +256,6 @@
         &-title {
           font-size: 56px;
           line-height: 56px;
-        }
-      }
-    }
-    .footer {
-      font-size: 11px;
-      line-height: 14px;
-      .logo-img {
-        width: 130px;
-      }
-      &-form {
-        .form__inp {
-          font-size: 18px;
-          padding: 0 20px;
-        }
-        .form__btn {
-          min-width: 110px;
-          font-size: 18px;
-        }
-      }
-      &-info {
-        font-size: 10px;
-        line-height: 12px;
-        p {
-          margin-bottom: 4px;
-        }
-      }
-      .socials {
-        .social {
-          margin-right: 5px;
-          img {
-            width: 36px;
-          }
-        }
-      }
-      &-subnav {
-        width: 70%;
-        ul {
-          &:first-child {
-            li {
-              width: 50%;
-              margin-bottom: 2px;
-              &:nth-child(2),
-              &:nth-child(4) {
-                text-align: end;
-              }
-            }
-          }
-          li {
-            text-align: left;
-            &:last-child {
-              margin-right: 0;
-            }
-            &:hover {
-              opacity: 0.9;
-            }
-          }
         }
       }
     }
