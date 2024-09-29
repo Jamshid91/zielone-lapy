@@ -30,9 +30,23 @@ select.addEventListener('click', () => {
 });
 
 options.forEach(option => {
+  let active = option.parentElement.previousElementSibling.children[0];
   option.addEventListener('click', () => {
     option.parentElement.parentElement.classList.remove('showSelect');
-    option.parentElement.previousElementSibling.children[0].textContent = option.textContent
+    active.textContent = option.textContent;
+    if(active.textContent == 'Co 1 tydzień') {
+      options[0].textContent = 'Co 2 tydzień';
+      options[1].textContent = 'Co 3 tydzień';
+    } 
+    else if(active.textContent == 'Co 2 tydzień') {
+      options[0].textContent = 'Co 1 tydzień';
+      options[1].textContent = 'Co 3 tydzień';
+    } 
+    else if(active.textContent == 'Co 3 tydzień') {
+      options[0].textContent = 'Co 1 tydzień';
+      options[1].textContent = 'Co 2 tydzień';
+    } 
+    console.dir( options[1].textContent)
   })
 })
 

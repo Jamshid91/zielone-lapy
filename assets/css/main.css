@@ -1566,6 +1566,9 @@ input, textarea, select, button {
   }
   .main .block4-info {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
   }
   .main .basket .basket-table {
