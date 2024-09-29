@@ -446,9 +446,6 @@ input, textarea, select, button {
   object-fit: cover;
   margin-bottom: 15px;
 }
-.main .block3-card:hover {
-  color: #2C9A33;
-}
 .main .block4 {
   padding: 72px 0;
   border-top: 1px solid #2C9A33;
@@ -903,6 +900,51 @@ input, textarea, select, button {
 }
 .main .profile .order-history-table tr:first-child td {
   border: none;
+}
+.main .profile .subscriptions-save {
+  width: 126px;
+  height: 35px;
+  font-size: 15px;
+  margin: 0;
+}
+.main .profile .subscriptions .change-subscriptions {
+  position: relative;
+  z-index: 3;
+}
+.main .profile .subscriptions-item {
+  padding: 30px 14px 22px 22px;
+  background: #fff;
+  position: absolute;
+  top: 85%;
+  left: 0;
+  width: 100%;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 0 0 13px 13px;
+  z-index: 2;
+  display: none;
+}
+.main .profile .subscriptions-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.main .profile .subscriptions-list li input[type=radio] {
+  appearance: none;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: #D9D9D9;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.main .profile .subscriptions-list li input[type=radio]:checked {
+  background: #2C9A33;
+}
+.main .profile .subscriptions-list li label {
+  cursor: pointer;
+}
+.main .profile .show-subscriptions .subscriptions-item {
+  display: block;
 }
 .main .products .products-box {
   display: flex;
@@ -1611,6 +1653,9 @@ input, textarea, select, button {
     background-position: center;
     height: 522px;
     padding-bottom: 60px;
+  }
+  .main .block1 .buyNow-link {
+    margin: 0 auto;
   }
   .main .block5-item .item-title {
     font-size: 24px;
