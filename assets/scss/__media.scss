@@ -1,4 +1,4 @@
-@media (min-width: 1900px) {
+@media (min-width: 1365px) {
   .main {
     .block1 {
       height: 100vh;
@@ -8,6 +8,16 @@
 
 @media (max-width: 1385px) {
   .main {
+    .block1 {
+      &-title {
+        font-size: 76px;
+        line-height: 76px;
+      }
+      &-subtitle {
+        font-size: 28px;
+        line-height: 30px;
+      }
+    }
     .product-card {
       .card-slider {
         .swiper-product-prev {
