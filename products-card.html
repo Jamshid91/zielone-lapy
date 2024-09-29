@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Główna</title>
+    <title>product</title>
     <link rel="shortcut icon" href="assets/img/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/plugin/swiper.css">
     <link rel="stylesheet" href="assets/css/plugin/bootstrap.css">
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-    <header class="header header-home">
+    <header class="header">
         <div class="header-box d-flex align-items-center justify-content-between">
             <a href="./index.html" class="logo">
                 <img src="assets/img/svg/logo.svg" alt="" class="logo-img d-none d-md-block">
@@ -61,130 +62,147 @@
     </header>
 
   <main class="main">
-    <div class="block1 d-flex align-items-end align-items-sm-center text-sm-start text-center">
+    <div class="product-card">
         <div class="container">
             <div class="row">
-                <div class="col-12">
-                    <h1 class="block1-title">Kuweta dla <br> piesków</h1>
-                    <p class="block1-subtitle">Żywa trawa dla szczęśliwych łap</p>
-                    <a href="./products-card.html" class="buyNow-link">Kup teraz</a>
+                <div class="col-12 position-relative">
+                    <a href="./index.html" class="back-home position-relative">główna</a>
                 </div>
             </div>
-        </div>
-      </div>
-
-      <div class="block2">
-        <div class="container">
             <div class="row">
-                <div class="col-12 d-flex align-items-center justify-content-between flex-wrap">
-                    <img src="assets/img/png/landshaft.png" alt="" class="block2-img">
-                    <div class="block2-info">
-                        <h2 class="title-text">Kuweta dla psa jest prosta</h2>
-                        <p class="info-text">Naturalna polska trawa</p>
-                        <p class="info-text">Kuweta do nauki korzystania z toalety dla szczeniąt, łatwa w użyciu i łatwa do czyszczenia</p>
-                        <a href="./products-card.html" class="buyNow-link">Kup teraz</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-      </div>
-
-      <div class="block3">
-        <h2 class="title-text"><span>Jak używać</span></h2>
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="block3-box">
-                        <div class="block3-card position-relative text-center">
-                            <a href="#" class="position-absolute top-0 start-0 w-100 h-100 z-1"></a>
-                            <img src="assets/img/png/dog1.png" alt="" class="card-img">
-                            <p class="card-text">Otwórz i włóż pokrywę pod pudełko</p>
-                        </div>
-                        <div class="block3-card position-relative text-center">
-                            <a href="#" class="position-absolute top-0 start-0 w-100 h-100 z-1"></a>
-                            <img src="assets/img/png/dog2.png" alt="" class="card-img">
-                            <p class="card-text">Umieść pudełko w wygodnym miejscu dla zwierzaka</p>
-                        </div>
-                        <div class="block3-card position-relative text-center">
-                            <a href="#" class="position-absolute top-0 start-0 w-100 h-100 z-1"></a>
-                            <img src="assets/img/png/dog3.png" alt="" class="card-img">
-                            <p class="card-text">Otwórz i włóż pokrywę pod pudełko</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-      </div>
-
-      <div class="block4">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 d-flex align-items-center justify-content-between flex-wrap">
-                    <div class="block4-info">
-                        <h2 class="title-text">Dlaczego żywa trawa?</h2>
-                        <p class="info-text">Żywa trawa naturalnie wchłania płyny i eliminuje nieprzyjemne zapachy, czyniąc naukę szczeniaka korzystania z toalety łatwym i bezproblemowym procesem. Nie wymaga czyszczenia. Po prostu wymień pudełko na nowe.</p>
-                        <a href="./products-card.html" class="buyNow-link">Kup teraz</a>
-                    </div>
-                    <img src="assets/img/png/block3.png" alt="" class="block4-img">
-                </div>
-            </div>
-        </div>
-      </div>
-
-      <div class="block5">
-        <h2 class="title-text"><span>Często zadawane pytania</span></h2>
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="block5-item">
-                        <div class="item-head d-flex align-items-start justify-content-between">
-                            <h3 class="item-title">Dlaczego warto spróbować Zielone Łapy?</h3>
-                            <button class="show-btn">
-                                <svg width="19" height="10" viewBox="0 0 19 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M18 9L9.5 1L1 9" stroke="#717171"/>
+                <div class="col-12 d-flex justify-content-center justify-content-lg-between flex-wrap flex-lg-nowrap">
+                    <div class="card-slider d-flex flex-column">
+                        <div class="position-relative">
+                            <div class="swiper big-card position-relative">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="card-item">
+                                            <img src="assets/img/png/landshaft.png" class="card-photo">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card-item">
+                                            <img src="assets/img/png/landshaft.png" class="card-photo">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card-item">
+                                            <img src="assets/img/png/landshaft.png" class="card-photo">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card-item">
+                                            <img src="assets/img/png/landshaft.png" class="card-photo">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card-item">
+                                            <img src="assets/img/png/landshaft.png" class="card-photo">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card-item">
+                                            <img src="assets/img/png/landshaft.png" class="card-photo">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-product-prev">
+                                <svg width="28" height="54" viewBox="0 0 28 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M27 53L1 27L27 1" stroke="#717171" stroke-linecap="round"/>
                                 </svg>
-                            </button>
-                        </div>
-                        <ul class="item-info">
-                            <li>Mieszkasz w mieszkaniu lub apartamencie bez podwórka</li>
-                            <li>Pracujesz długo lub masz nieregularne godziny pracy</li>
-                            <li>Chcesz uniknąć błędów na dywanie, podłodze i meblach</li>
-                            <li>Masz ograniczoną mobilność</li>
-                            <li>Trenujesz czczeniaka</li>
-                            <li>Masz starszego psa</li>
-                            <li>Chcesz uniknąć wychodzenia z psem późno w nocy, w deszczu lub na śniegu</li>
-                        </ul>
-                    </div>
-                    <div class="block5-item">
-                        <div class="item-head d-flex align-items-start justify-content-between">
-                            <h3 class="item-title">Jak często powinienem wymieniać?</h3>
-                            <button class="show-btn">
-                                <svg width="19" height="10" viewBox="0 0 19 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M18 9L9.5 1L1 9" stroke="#717171"/>
+                            </div>
+                            <div class="swiper-product-next">
+                                <svg width="28" height="54" viewBox="0 0 28 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1L27 27L1 53" stroke="#717171" stroke-linecap="round"/>
                                 </svg>
-                            </button>
+                            </div>
                         </div>
-                        <ul class="item-info">
-                            <li>Zalecamy wymianę Zielone Lapy co 1-4 tygodnie, w zależności od wielkości twojego zwierzaka i częstotliwości użytkowania produktu</li>
-                        </ul>
+                        <div class="swiper small-card">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="card-item">
+                                        <img src="assets/img/png/landshaft.png" class="card-photo">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card-item">
+                                        <img src="assets/img/png/landshaft.png" class="card-photo">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card-item">
+                                        <img src="assets/img/png/landshaft.png" class="card-photo">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card-item">
+                                        <img src="assets/img/png/landshaft.png" class="card-photo">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card-item">
+                                        <img src="assets/img/png/landshaft.png" class="card-photo">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card-item">
+                                        <img src="assets/img/png/landshaft.png" class="card-photo">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
                     </div>
-                    <div class="block5-item">
-                        <div class="item-head d-flex align-items-start justify-content-between">
-                            <h3 class="item-title">Jak często powinienem wymieniać?</h3>
-                            <button class="show-btn">
-                                <svg width="19" height="10" viewBox="0 0 19 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M18 9L9.5 1L1 9" stroke="#717171"/>
-                                </svg>
-                            </button>
+                    <div class="card-info">
+                        <h1 class="info-title text-center text-lg-start">Kuweta 50x50</h1>
+                        <div class="rating d-flex d-lg-none justify-content-center">
+                            <img src="assets/img/svg/star.svg" alt="">
+                            <img src="assets/img/svg/star.svg" alt="">
+                            <img src="assets/img/svg/star.svg" alt="">
+                            <img src="assets/img/svg/star.svg" alt="">
+                            <img src="assets/img/svg/star-dis.svg" alt="">
                         </div>
-                        <ul class="item-info">
-                            <li>Gdzie najlepiej umieścić kuwetę?</li>
-                        </ul>
+                        <div class="">
+                            <div class="info-item">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h3 class="item-title">Jednorazowy zakup</h3>
+                                    <span class="item-price">$26</span>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h3 class="item-title">Zapisz się i otrzymaj 5% zniżki</h3>
+                                    <span class="item-price">$28</span>
+                                </div>
+                                <div class="check-data d-flex justify-content-between align-items-center">
+                                    <p class="">Wybierz termin:</p>
+                                    <div class="select">
+                                        <div class="select-head d-flex align-items-center justify-content-between">
+                                            <span class="active">Co 1 tydzień</span>
+                                            <img src="assets/img/svg/down.svg" alt="">
+                                        </div>
+                                        <ul class="select-options">
+                                            <li class="option">Co 1 tydzień</li>
+                                            <li class="option">Co 2 tydzień</li>
+                                            <li class="option">Co 3 tydzień</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-center justify-content-lg-end">
+                            <div class="card-addBasket d-flex">
+                                <P class="product-price">$4046.21</P>
+                                <button class="addBasket-btn">Do koszyka</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-      </div>
+    </div>
   </main>
 
   <footer class="footer">
@@ -329,8 +347,9 @@
     </div>
   </div>
 
+  <script src="assets/js/plugin/swiper.js"></script>
   <script src="assets/js/header.js"></script>
-  <script src="assets/js/faqs.js"></script>
   <script src="assets/js/form.js"></script>
+  <script src="assets/js/card.js"></script>
 </body>
 </html>

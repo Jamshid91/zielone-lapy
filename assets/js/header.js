@@ -1,5 +1,14 @@
 const menuBtn = document.querySelector('.menu-btn');
 const body = document.querySelector('body');
+const basket_count = document.querySelector('.basket-count');
+
+function funcTest() {
+    if(basket_count.textContent == 0) {
+        basket_count.classList.add('d-none')
+    }
+}
+
+funcTest();
 
 menuBtn.addEventListener('click', () => {
     menuBtn.parentElement.parentElement.classList.toggle('showMenu');
