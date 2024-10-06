@@ -269,6 +269,106 @@ input, textarea, select, button {
   display: block;
 }
 
+.chat {
+  position: fixed;
+  bottom: 30px;
+  right: 25px;
+  z-index: 9999;
+}
+.chat-btn {
+  cursor: pointer;
+}
+.chat-item {
+  height: 400px;
+  overflow-y: scroll;
+  padding: 0 17px 0;
+}
+.chat-item::-webkit-scrollbar {
+  width: 6px;
+  border-radius: 10px;
+  background: #fff;
+}
+.chat-item::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 10px;
+  background: #ccc;
+}
+.chat-box {
+  width: 315px;
+  border-radius: 13px;
+  background: #fff;
+  box-shadow: 0px 4px 5.4px 0px rgba(0, 0, 0, 0.15);
+  font-size: 12px;
+  line-height: 14px;
+  position: absolute;
+  right: 100%;
+  bottom: 100%;
+  padding: 30px 10px 60px 0;
+  overflow: hidden;
+  display: none;
+}
+.chat-box .chat-hide {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  background: transparent;
+}
+.chat-box .user,
+.chat-box .admin {
+  width: 246px;
+  margin-bottom: 8px;
+}
+.chat-box .user .text-box,
+.chat-box .admin .text-box {
+  width: 246px;
+  padding: 10px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.3019607843);
+  border-radius: 8px;
+  margin-bottom: 3px;
+}
+.chat-box .admin {
+  margin-right: auto;
+}
+.chat-box .admin .text-box {
+  border-bottom-left-radius: 1px;
+}
+.chat-box .user {
+  margin-left: auto;
+}
+.chat-box .user .text-box {
+  border-bottom-right-radius: 1px;
+}
+.chat-box .user .text-data {
+  text-align: right;
+}
+.chat-box .chat-form {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 55px;
+  border-top: 1px solid rgba(0, 0, 0, 0.2509803922);
+  box-shadow: 0px -4px 11px 0px rgba(0, 0, 0, 0.025);
+}
+.chat-box .chat-form .chat-text {
+  width: 100%;
+  height: 100%;
+  resize: none;
+  padding: 17px 60px 17px 17px;
+}
+.chat-box .chat-form .chat-submit {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 55px;
+  height: 100%;
+  background: #2C9A33;
+}
+
+.showChat .chat-box {
+  display: block;
+}
+
 .header {
   padding: 0 20px;
 }
@@ -448,7 +548,7 @@ input, textarea, select, button {
 }
 .main .block4 {
   padding: 72px 0;
-  border-top: 1px solid #2C9A33;
+  border-top: 3px solid #2C9A33;
 }
 .main .block4 .title-text {
   text-align: left;
@@ -1118,6 +1218,154 @@ input, textarea, select, button {
   border-radius: 12px;
   font-size: 20px;
 }
+.main .reviews .reviews-box {
+  padding: 75px 0;
+  position: relative;
+}
+.main .reviews .reviews-box::before {
+  content: url(../img/svg/up.svg);
+  position: absolute;
+  top: 45px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.main .reviews .reviews-box::after {
+  content: url(../img/svg/down1.svg);
+  position: absolute;
+  bottom: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.main .review {
+  padding: 10px 0;
+  border-bottom: 1px solid #717171;
+}
+.main .review:last-child {
+  border: none;
+}
+.main .review-stars img {
+  margin-right: 5px;
+}
+.main .review-name {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #2C9A33;
+  margin: 14px 0;
+}
+.main .review-text {
+  font-size: 15px;
+  line-height: 15px;
+  width: 75%;
+}
+.main .review-data {
+  font-size: 12px;
+  line-height: 12px;
+}
+.main .review .photos {
+  margin-top: 10px;
+}
+.main .review .photos img {
+  width: 96px;
+  height: 120px;
+  object-fit: cover;
+  margin-right: 18px;
+}
+.main .review .photos img:last-child {
+  margin-right: 0;
+}
+.main .review-page {
+  padding-bottom: 150px;
+}
+.main .review-page .ratings {
+  margin: 60px 0;
+  font-size: 15px;
+  line-height: 15px;
+}
+.main .review-page .ratings .reating {
+  margin-bottom: 5px;
+}
+.main .review-page .ratings-star {
+  margin: 0 45px;
+}
+.main .review-page .ratings-star .star {
+  margin-right: 7px;
+}
+.main .review-page .ratings-star .star:last-child {
+  margin-right: 14px;
+}
+.main .review-page .ratings .review-write_btn {
+  width: 213px;
+  height: 48px;
+  border-radius: 8px;
+  background: rgba(44, 154, 51, 0.7490196078);
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 700;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.main .review-page .review-title {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #2C9A33;
+  margin-bottom: 45px;
+}
+.main .review-page .review-box {
+  margin-bottom: 80px;
+}
+.main .review-page .review-box .stars img {
+  margin-right: 3px;
+}
+.main .review-page .review-box .review-message {
+  width: 40%;
+  height: 80px;
+  border-radius: 8px;
+  border: 2px solid #2C9A33;
+  padding: 13px 20px;
+  font-size: 15px;
+  line-height: 15px;
+  resize: none;
+}
+.main .review-page .review-box .upload-img .upload {
+  display: none;
+}
+.main .review-page .review-box .upload-img label {
+  width: 79px;
+  height: 79px;
+  border-radius: 8px;
+  border: 2px solid #717171;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.main .review-page .review-box .review-submit {
+  margin-top: 16px;
+}
+.main .review-page .review-box .review-img {
+  margin-top: 35px;
+}
+.main .review-page .review-box .review-img img {
+  width: 98px;
+  height: 120px;
+  object-fit: cover;
+  margin-right: 5px;
+}
+.main .review-page .review-box .review-img img:last-child {
+  margin-right: 0;
+}
+.main .review-page .review {
+  border: none;
+  border-top: 1px solid #717171;
+}
+.main .review-page .review:last-child {
+  border-top: 1px solid #717171;
+}
 
 .footer {
   background: #2C9A33;
@@ -1512,6 +1760,28 @@ input, textarea, select, button {
     width: 100%;
     margin-top: 40px;
   }
+  .main .review-page .review-box {
+    position: relative;
+    padding-bottom: 100px;
+  }
+  .main .review-page .review-box .stars {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 22px;
+  }
+  .main .review-page .review-box .review-title {
+    margin-bottom: 22px;
+  }
+  .main .review-page .review-box .review-message {
+    width: 75%;
+  }
+  .main .review-page .review-box .form-item {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
   .footer {
     font-size: 14px;
     line-height: 16px;
@@ -1605,6 +1875,27 @@ input, textarea, select, button {
   .main .products .product {
     width: 380px;
   }
+  .main .reviews .reviews-box {
+    padding: 60px 0;
+  }
+  .main .reviews .reviews-box::before {
+    top: 25px;
+  }
+  .main .reviews .reviews-box::after {
+    bottom: 25px;
+  }
+  .main .review {
+    padding: 20px 0;
+  }
+  .main .review-name {
+    margin: 9px 0;
+  }
+  .main .review-text {
+    width: 100%;
+  }
+  .main .review-data {
+    display: none;
+  }
   .footer-info {
     margin-right: 20px;
     font-size: 12px;
@@ -1643,6 +1934,13 @@ input, textarea, select, button {
   }
 }
 @media (max-width: 576px) {
+  .chat {
+    bottom: 10px;
+    right: -10px;
+  }
+  .chat-box {
+    right: 30px;
+  }
   body {
     font-size: 20px;
     line-height: 24px;
@@ -1833,6 +2131,25 @@ input, textarea, select, button {
   .main .product-card .card-info .card-addBasket .addBasket-btn {
     width: 45%;
     font-size: 18px;
+  }
+  .main .review-page {
+    padding-bottom: 40px;
+  }
+  .main .review-page .ratings {
+    margin: 30px 0 60px;
+  }
+  .main .review-page .review-box {
+    margin-bottom: 40px;
+  }
+  .main .review-page .review-box .review-message {
+    width: 73%;
+  }
+  .main .review-page .review-box .form-item {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
   }
   .footer-top {
     padding: 50px 0 30px;

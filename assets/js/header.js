@@ -20,4 +20,24 @@ document.addEventListener('click', (e) => {
         menuBtn.parentElement.parentElement.classList.remove('showMenu');
         body.classList.remove('bodyStopScroll')
     }
+});
+
+
+
+// chat 
+const chat = document.querySelector('.chat');
+const chatBtn = document.querySelector('.chat-btn');
+const chatBtn_hide = document.querySelector('.chat-hide');
+
+chatBtn.addEventListener('click', () => {
+    chat.classList.toggle('showChat')
+})
+
+chatBtn_hide.addEventListener('click', () => {
+    chat.classList.remove('showChat')
+});
+
+
+document.addEventListener('click', (e) => {
+    chat.contains(e.target) || chat.classList.remove('showChat')
 })

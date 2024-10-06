@@ -240,6 +240,107 @@ body {
   }
 
 
+.chat {
+  position: fixed;
+  bottom: 30px;
+  right: 25px;
+  z-index: 9999;
+  &-btn {
+    cursor: pointer;
+  }
+  &-item {
+    height: 400px;
+    overflow-y: scroll;
+    padding: 0 17px 0;
+    &::-webkit-scrollbar {
+      width: 6px;
+      border-radius: 10px;
+      background: #fff;
+    }
+    &::-webkit-scrollbar-thumb {
+      width: 6px;
+      border-radius: 10px;
+      background: #ccc;
+    }
+  }
+  &-box {
+    width: 315px;
+    border-radius: 13px;
+    background: #fff;
+    box-shadow: 0px 4px 5.4px 0px rgba(0,0,0,0.15);
+    font-size: 12px;
+    line-height: 14px;
+    position: absolute;
+    right: 100%;
+    bottom: 100%;
+    padding: 30px 10px 60px 0;
+    overflow: hidden;
+    display: none;
+    .chat-hide {
+      position: absolute;
+      top: 6px;
+      right: 6px;
+      background: transparent;
+    }
+    .user,
+    .admin {
+      width: 246px;
+      margin-bottom: 8px;
+      .text-box {
+        width: 246px;
+        padding: 10px 10px;
+        border: 1px solid #0000004D;
+        border-radius: 8px;
+        margin-bottom: 3px;
+      }
+    }
+    .admin {
+      margin-right: auto;
+      .text-box {
+        border-bottom-left-radius: 1px;
+      }
+    }
+    .user {
+      margin-left: auto;
+      .text-box {
+        border-bottom-right-radius: 1px;
+      }
+      .text-data {
+        text-align: right;
+      }
+    }
+    .chat-form {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 55px;
+      border-top: 1px solid #00000040;
+      box-shadow: 0px -4px 11px 0px rgba(0,0,0,0.025);
+      .chat-text {
+        width: 100%;
+        height: 100%;
+        resize: none;
+        padding: 17px 60px 17px 17px;
+      }
+      .chat-submit {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 55px;
+        height: 100%;
+        background: #2C9A33;
+      }
+    }
+  }
+}
+
+.showChat {
+  .chat-box {
+    display: block;
+  }
+}
+
 .header {
   padding: 0 20px;
   &::before {
@@ -427,7 +528,7 @@ body {
 
   .block4 {
     padding: 72px 0;
-    border-top: 1px solid #2C9A33;
+    border-top: 3px solid #2C9A33;
     .title-text {
       text-align: left;
       margin-bottom: 20px;
@@ -1139,6 +1240,167 @@ body {
           font-size: 20px;
         }
       }
+    }
+  }
+
+  .reviews {
+    .reviews-box {
+      padding: 75px 0;
+      position: relative;
+      &::before {
+        content: url(../img/svg/up.svg);
+        position: absolute;
+        top: 45px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      &::after {
+        content: url(../img/svg/down1.svg);
+        position: absolute;
+        bottom: 35px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+  
+  .review {
+    padding: 10px 0;
+    border-bottom: 1px solid #717171;
+    &:last-child {
+      border: none;
+    }
+    &-stars {
+      img {
+        margin-right: 5px;
+      }
+    }
+    &-name {
+      font-size: 20px;
+      line-height: 20px;
+      font-weight: 700;
+      color: #2C9A33;
+      margin: 14px 0;
+    }
+    &-text {
+      font-size: 15px;
+      line-height: 15px;
+      width: 75%;
+    }
+    &-data {
+      font-size: 12px;
+      line-height: 12px;
+    }
+    .photos {
+      margin-top: 10px;
+      img {
+        width: 96px;
+        height: 120px;
+        object-fit: cover;
+        margin-right: 18px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  .review-page {
+    padding-bottom: 150px;
+    .ratings {
+      margin: 60px 0;
+      font-size: 15px;
+      line-height: 15px;
+      .reating {
+        margin-bottom: 5px;
+      }
+      &-star {
+        margin: 0 45px;
+        .star {
+          margin-right: 7px;
+          &:last-child {
+            margin-right: 14px;
+          }
+        }
+      }
+      .review-write_btn {
+        width: 213px;
+        height: 48px;
+        border-radius: 8px;
+        background: #2C9A33BF;
+        font-size: 15px;
+        line-height: 15px;
+        font-weight: 700;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
+    }
+
+    .review-title {
+      font-size: 20px;
+      line-height: 20px;
+      font-weight: 700;
+      color: #2C9A33;
+      margin-bottom: 45px;
+    }
+    .review-box {
+      margin-bottom: 80px;
+      .stars {
+        img {
+          margin-right: 3px;
+        }
+      }
+      .review-message {
+        width: 40%;
+        height: 80px;
+        border-radius: 8px;
+        border: 2px solid #2C9A33;
+        padding: 13px 20px;
+        font-size: 15px;
+        line-height: 15px;
+        resize: none;
+      }
+      .upload-img {
+        .upload {
+          display: none;
+        }
+        label {
+          width: 79px;
+          height: 79px;
+          border-radius: 8px;
+          border: 2px solid #717171;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+        }
+      }
+      .review-submit {
+        margin-top: 16px;
+      }
+      .review-img {
+        margin-top: 35px;
+        img {
+          width: 98px;
+          height: 120px;
+          object-fit: cover;
+          margin-right: 5px;
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+
+    .review {
+      border: none;
+    border-top: 1px solid #717171;
+    &:last-child {
+      border-top: 1px solid #717171;
+    }
     }
   }
 }
